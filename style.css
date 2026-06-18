@@ -1,0 +1,19 @@
+header {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 15px;
+
+    position: fixed;
+    justify-content: space-evenly;
+}
+
+section {
+    display: grid;
+    padding-left: 800px;
+    padding-top: 250px;
+}
