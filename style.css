@@ -1,6 +1,7 @@
 /* cores: 
 #4d3542
 #212121
+#ff4d97
 colocar o justify no paragrafo que escrevi sobre mim na página inicial (deixa as letras alinhadas)
 */
 * { 
@@ -10,14 +11,24 @@ colocar o justify no paragrafo que escrevi sobre mim na página inicial (deixa a
 }
 
 header {
-    text-align: center;
+    text-align: left;
     padding-top: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75vh;
+
+    background-color: #4d3542;
 }
 
 h1 {
     text-transform: uppercase;
-    font-size: 45px;
-    padding-left: 17rem;
+    font-size: 90px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 450;
+    padding-left: 32rem;
+    padding-top: 7rem;
+    color: white;
 }
 
 nav {
@@ -37,6 +48,10 @@ nav {
     background-color: #212121;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav > h2 {
     padding: 10px;
 }
@@ -44,10 +59,25 @@ nav > h2 {
 section {
     display: grid;
     padding-left: 800px;
-    padding-top: 200px;
+    padding-top: 50px;
+}
+
+#introducao {
+    text-align: justify;
+}
+
+section > h2 {
+    top: 0;
+    font-size: 34px;
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+    font-weight: 450;
+    color: #741b47;
+    text-transform: uppercase;
 }
 
 footer {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 200px;
+    padding-left: 250px;
 }
