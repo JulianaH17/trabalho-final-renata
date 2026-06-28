@@ -12,10 +12,7 @@ colocar o justify no paragrafo que escrevi sobre mim na página inicial (deixa a
 
 header {
     text-align: left;
-    padding-top: 100px;
-    top: 0;
-    left: 0;
-    right: 0;
+    padding-top: 6%;
     height: 75vh;
 
     /* Imagem de fundo da capa do portfólio */
@@ -30,24 +27,30 @@ header {
 h1 {
     text-transform: uppercase;
     font-size: 90px;
-    font-family: "Oswald", sans-serif;
     font-weight: 450;
-    padding-left: 30rem;
+    font-family: "Oswald", sans-serif;
+    
+    padding-left: 30%;
     padding-top: 6rem;
+
     color: white;
 }
 
 nav {
-    width: 250px;
+    width: 16.5%;
     height: 100vh;
+
     top: 0;
     left: 0;
 
     display: flex;
     flex-direction: column;
+
     position: fixed;
+
     padding-top: 16rem;
     padding-left: 3rem;
+
     text-align: left;
 
     font-size: 14px;
@@ -64,7 +67,7 @@ nav {
 }
 
 nav > h2 {
-    padding: 10px;
+    padding: 6%;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -72,8 +75,8 @@ nav > h2 {
 
 section {
     display: grid;
-    padding-left: 310px;
-    padding-top: 50px;
+    padding-left: 21%;
+    padding-top: 3%;
 }
 
 #introducao {
@@ -83,41 +86,51 @@ section {
 
 .foto img {
     width: 450px;
-    height: 300px;
+    height: auto;
+    max-width: 100%;
 }
 
 .texto > h2 {
     top: 0;
+    max-width: 600px;
+
     font-size: 44px;
-    text-align: left;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
+
     color: #741b47;
+
+    text-align: left;
     text-transform: uppercase;
 }
 
 .texto > p {
     text-align: justify;
+
     font-family: "Lato", sans-serif;
     line-height: 1.8;
-    padding-top: 30px;
+
+    padding-top: 4%;
+    max-width: 650px;
 }
 
 footer {
     text-align: center;
-    padding-top: 60px;
-    padding-left: 200px;
+
+    padding-top: 3%;
+    padding-left: 13%;
 }
 
 .topo-footer {
     display: flex;
-    gap: 90px;
+    gap: 7%;
     justify-content: center;
     align-items: center;
 }
 
 .logo img {
     width: 200px;
+    max-width: 100%;
 }
 
 .rodape > p {
@@ -126,9 +139,59 @@ footer {
 
 .contato {
     flex-basis: 100%;
-    margin-left: 240px;
+    margin-left: 20%;
 }
 
 .contato span {
     color:#212121;
+}
+
+@media (max-width: 600px) {
+    header {
+        min-height: 50vh;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 90px;
+        padding-left: 20px;
+        padding-top: 5rem;
+    }
+
+    nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    #introducao {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .texto > h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .texto > p {
+        text-align: justify;
+    }
+
+    .topo-footer {
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 150px;
+    }
 }
