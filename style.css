@@ -10,6 +10,10 @@ colocar o justify no paragrafo que escrevi sobre mim na página inicial (deixa a
     box-sizing: border-box;
 }
 
+main {
+    margin-left: 16.5%;
+}
+
 header {
     text-align: left;
     padding-top: 6%;
@@ -30,7 +34,7 @@ h1 {
     font-weight: 450;
     font-family: "Oswald", sans-serif;
     
-    padding-left: 30%;
+    padding-left: 20%;
     padding-top: 6rem;
 
     color: white;
@@ -75,7 +79,7 @@ nav > h2 {
 
 section {
     display: grid;
-    padding-left: 21%;
+    padding-left: 6%;
     padding-top: 3%;
 }
 
@@ -118,7 +122,6 @@ footer {
     text-align: center;
 
     padding-top: 3%;
-    padding-left: 13%;
 }
 
 .topo-footer {
@@ -150,6 +153,10 @@ footer {
     header {
         min-height: 50vh;
         background-position: center;
+    }
+
+    main {
+        margin-left: 0;
     }
 
     h1 {
@@ -193,5 +200,9 @@ footer {
 
     .logo img {
         width: 150px;
+    }
+
+    .contato {
+        margin-left: 0;
     }
 }
