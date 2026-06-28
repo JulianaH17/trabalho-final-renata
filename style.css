@@ -18,7 +18,13 @@ header {
     right: 0;
     height: 75vh;
 
+    /* Imagem de fundo da capa do portfólio */
     background-color: #4d3542;
+    background-image: url(images/Capa_de_fundo_portfolio_Ju.jpg);
+    background-size: auto 130%;
+    background-position: right;
+    background-repeat: no-repeat; /* Evita que a imagem se repita para preencher o resto do espaço */
+
 }
 
 h1 {
@@ -26,8 +32,8 @@ h1 {
     font-size: 90px;
     font-family: "Oswald", sans-serif;
     font-weight: 450;
-    padding-left: 32rem;
-    padding-top: 7rem;
+    padding-left: 30rem;
+    padding-top: 6rem;
     color: white;
 }
 
@@ -44,40 +50,85 @@ nav {
     padding-left: 3rem;
     text-align: left;
 
-    font-size: 15px;
+    font-size: 14px;
     background-color: #212121;
 }
 
-a {
+.paginas a {
+    color: white;
     text-decoration: none;
+}
+
+.paginas a.ativa {
+    color:#ff3a9d;
 }
 
 nav > h2 {
     padding: 10px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 section {
     display: grid;
-    padding-left: 800px;
+    padding-left: 310px;
     padding-top: 50px;
 }
 
 #introducao {
-    text-align: justify;
+    display: flex;
+    gap: 50px;
 }
 
-section > h2 {
+.foto img {
+    width: 450px;
+    height: 300px;
+}
+
+.texto > h2 {
     top: 0;
-    font-size: 34px;
+    font-size: 44px;
     text-align: left;
     font-family: "Oswald", sans-serif;
-    font-weight: 450;
+    font-weight: 400;
     color: #741b47;
     text-transform: uppercase;
 }
 
+.texto > p {
+    text-align: justify;
+    font-family: "Lato", sans-serif;
+    line-height: 1.8;
+    padding-top: 30px;
+}
+
 footer {
     text-align: center;
-    padding-top: 200px;
-    padding-left: 250px;
+    padding-top: 60px;
+    padding-left: 200px;
+}
+
+.topo-footer {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.rodape > p {
+    font-family: "Lato", sans-serif;
+}
+
+.contato {
+    flex-basis: 100%;
+    margin-left: 240px;
+}
+
+.contato span {
+    color:#212121;
 }

@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
     <title>Portfólio Juliana Hara</title>
 </head>
 <body>
@@ -15,24 +17,38 @@
         <h1>Portfólio</h1>
     </header>
     <aside>
-        <nav>
-            <h2><a href="">Início</a></h2>
+        <nav class="paginas">
+            <h2><a href="index.html" class="ativa">Início</a></h2>
             <h2><a href="sobremim.html">Sobre mim</a></h2>
             <h2><a href="projetos.html">Projetos</a></h2>
         </nav>
     </aside>
     <section id="introducao">
-        <h2>Quem sou eu?</h2>
-        <p>
-            Olá, me chamo Juliana Hara Bando e tenho 19 anos. Atualmente estou cursando Engenharia <br>
-            de Software, pela UniFil, e estou em uma constante busca por aprimorar minhas habilidades <br>
-            e crescer profissionalmente dentro da área de programação.
-        </p>
+        <div class="foto">
+            <img src="images/Foto_inicio.jpg" alt="Foto de Juliana na Semana Tecnológica de 2025">
+        </div>
+        <div class="texto">
+            <h2>Quem sou eu?</h2>
+            <p>
+                Olá, me chamo Juliana Hara Bando e tenho 19 anos. Atualmente estou cursando Engenharia <br>
+                de Software, pela UniFil, e estou em uma constante busca por aprimorar minhas habilidades <br>
+                e crescer profissionalmente dentro da área de programação.
+            </p>
+        </div>
     </section>
     <footer>
-        <p>Estou aberta a oportunidades, projetos e conexões na área de tecnologia. Será um prazer conversar com você! ✨</p>
-        <a href="">Email</a>
-        <a href="">GitHub</a>
+        <div class="topo-footer">
+            <div class="logo">
+                <img src="images/Logo_UniFil.png" alt="Logo da Instituição UniFil">
+            </div>
+            <div class="rodape">
+                <p>Estou aberta a oportunidades, projetos e conexões na área de tecnologia. Será um prazer conversar com você! ✨</p><br>
+            </div>
+        </div>
+        <div class="contato">
+            <a href="mailto:juliana.bando@edu.unifil.br" target="_blank">
+                <span class="material-symbols-outlined">mail</span>
+        </div>
     </footer>
 </body>
 </html>
