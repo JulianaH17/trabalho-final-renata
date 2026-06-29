@@ -15,12 +15,12 @@ main {
 }
 
 header {
-    text-align: left;
-    padding-top: 4%;
-    padding-left: 12%;
     height: 55vh;
-
     background-color: #4d3542;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -28,11 +28,11 @@ h1 {
     font-size: 90px;
     font-weight: 450;
     font-family: "Oswald", sans-serif;
-    
-    padding-left: 25%;
-    padding-top: 4rem;
 
     color: white;
+
+    margin: 0;
+    text-align: center;
 }
 
 nav {
@@ -160,7 +160,11 @@ footer {
         min-height: 100px;
         height: 300px;
 
-        background-color: #4d3542;     
+        background-color: #4d3542;    
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     main {
@@ -169,9 +173,8 @@ footer {
 
     h1 {
         font-size: 50px;
-        padding-left: 18%;
-        padding-top: 1%;
-        margin-top: 20%;
+        margin: 0;
+        text-align: center;
     }
 
     nav {
