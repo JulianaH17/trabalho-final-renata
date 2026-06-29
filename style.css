@@ -61,12 +61,23 @@ nav {
     background-color: #212121;
 }
 
+#iconeTema {
+    position: absolute;
+
+    width: 30px;
+    top: 30px;
+    left: 30px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 .paginas a {
     color: white;
     text-decoration: none;
 }
 
-.paginas a.ativa {
+.paginas a.ativa, .paginas a:hover {
     color:#ff3a9d;
 }
 
@@ -205,4 +216,14 @@ footer {
     .contato {
         margin-left: 0;
     }
+}
+
+/* Trocando o tema para escuro */
+
+body.escuro section, body.escuro footer, body.escuro .introducao-pagina {
+    background-color: #121212;
+}
+
+body.escuro p, body.escuro .contato span {
+    color: white;
 }
