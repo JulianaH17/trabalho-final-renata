@@ -1,10 +1,10 @@
-/* cores: 
+/* cores:
 #4d3542
 #212121
 #ff4d97
-colocar o justify no paragrafo que escrevi sobre mim na página inicial (deixa as letras alinhadas)
 */
-* { 
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,15 +17,13 @@ main {
 header {
     text-align: left;
     padding-top: 6%;
-    height: 75vh;
+    min-height: 75vh;
 
-    /* Imagem de fundo da capa do portfólio */
     background-color: #4d3542;
     background-image: url(images/Capa_de_fundo_portfolio_Ju.jpg);
     background-size: auto 130%;
     background-position: right;
-    background-repeat: no-repeat; /* Evita que a imagem se repita para preencher o resto do espaço */
-
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -33,7 +31,7 @@ h1 {
     font-size: 90px;
     font-weight: 450;
     font-family: "Oswald", sans-serif;
-    
+
     padding-left: 20%;
     padding-top: 6rem;
 
@@ -63,7 +61,6 @@ nav {
 
 #iconeTema {
     position: absolute;
-
     width: 30px;
     top: 30px;
     left: 30px;
@@ -77,15 +74,15 @@ nav {
     text-decoration: none;
 }
 
-.paginas a.ativa, .paginas a:hover {
-    color:#ff3a9d;
+.paginas a.ativa,
+.paginas a:hover {
+    color: #ff3a9d;
 }
 
 nav > h2 {
     padding: 6%;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-style: normal;
 }
 
 section {
@@ -106,7 +103,6 @@ section {
 }
 
 .texto > h2 {
-    top: 0;
     max-width: 600px;
 
     font-size: 44px;
@@ -131,8 +127,8 @@ section {
 
 footer {
     text-align: center;
-
     padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .topo-footer {
@@ -157,33 +153,53 @@ footer {
 }
 
 .contato span {
-    color:#212121;
+    color: #212121;
 }
 
 @media (max-width: 600px) {
-    header {
-        min-height: 50vh;
-        background-position: center;
-    }
 
     main {
         margin-left: 0;
-    }
-
-    h1 {
-        font-size: 90px;
-        padding-left: 20px;
-        padding-top: 5rem;
     }
 
     nav {
         position: relative;
         width: 100%;
         height: auto;
+
         padding: 20px;
+
         flex-direction: row;
         justify-content: center;
-        gap: 20px;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav h2 {
+        padding: 0;
+    }
+
+    #iconeTema {
+        position: static;
+        width: 25px;
+    }
+
+    header {
+        min-height: 100px;
+        height: 300px;
+
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+
+        background-color: #4d3542;       
+    }
+
+    h1 {
+        font-size: 50px;
+        padding-left: 20px;
+        padding-top: 3rem;
+        margin-top: 30%;
     }
 
     section {
@@ -196,6 +212,11 @@ footer {
         gap: 30px;
     }
 
+    .foto img {
+        width: 100%;
+        max-width: 320px;
+    }
+
     .texto > h2 {
         font-size: 32px;
         text-align: center;
@@ -203,10 +224,12 @@ footer {
 
     .texto > p {
         text-align: justify;
+        max-width: 100%;
     }
 
     .topo-footer {
         flex-direction: column;
+        gap: 20px;
     }
 
     .logo img {
@@ -218,12 +241,13 @@ footer {
     }
 }
 
-/* Trocando o tema para escuro */
-
-body.escuro section, body.escuro footer, body.escuro .introducao-pagina {
+body.escuro section,
+body.escuro footer,
+body.escuro .introducao-pagina {
     background-color: #121212;
 }
 
-body.escuro p, body.escuro .contato span {
+body.escuro p,
+body.escuro .contato span {
     color: white;
 }

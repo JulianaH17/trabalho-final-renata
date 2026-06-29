@@ -171,8 +171,10 @@ footer {
 
 @media (max-width: 600px) {
     header {
-        min-height: 50vh;
-        background-position: center;
+        min-height: 100px;
+        height: 300px;
+
+        background-color: #4d3542;     
     }
 
     main {
@@ -180,25 +182,32 @@ footer {
     }
 
     h1 {
-        font-size: 90px;
-        padding-left: 20px;
-        padding-top: 5rem;
+        font-size: 50px;
+        padding-left: 22%;
+        padding-top: 1%;
+        margin-top: 20%;
     }
 
-    nav {
+     nav {
         position: relative;
         width: 100%;
         height: auto;
+
         padding: 20px;
+
         flex-direction: row;
         justify-content: center;
-        gap: 20px;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    nav h2 {
+        padding: 0;
     }
 
-    #iconeTema {
-        top: 10px;
-        left: 10px;
-        width: 30px;
+     #iconeTema {
+        position: static;
+        width: 25px;
     }
 
     section {
@@ -209,6 +218,11 @@ footer {
         flex-direction: column;
         text-align: center;
         gap: 30px;
+    }
+
+    .introducao-pagina{
+        padding: 30px 20px;
+        text-align: justify;
     }
 
     .texto-drone > h2 {
